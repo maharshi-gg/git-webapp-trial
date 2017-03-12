@@ -5,9 +5,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <title>Colored Lists </title>
-
-    <link rel="stylesheet" href="styling.css" type="text/css">
+    <title>Colored Lists</title>
+    <link rel="stylesheet" href="stylesheets/header_style.css" type="text/css">
     <link rel="icon" href="HTML Icons\favicon-checklist.ico" type="image/x-icon">
 
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
@@ -21,17 +20,19 @@
         <div id="header">
 
 
-            <h1><a href="/Simple App 1/main.php">Colored Lists</a></h1>
+            <h1><a href="main.php">Colored Lists</a></h1>
 
 
             <div id="control">
 
-<!-- IF LOGGED IN -->
-                <p><a href="/logout.php" class="button">Log out</a> <a href="/account.php" class="button">Your Account</a></p>
+              <?php if(isset($_SESSION['LoggedIn']) && isset($_SESSION['Username']) && $_SESSION['LoggedIn']==1): ?>
 
-<!-- IF LOGGED OUT -->
-                <p><a class="button" href="/signup.php">Sign up</a> &nbsp; <a class="button" href="/login.php">Log in</a></p>
-<!-- END OF IF STATEMENT -->
+                <p><a href="logout.php" class="button">Log out</a> <a href="account.php" class="button">Your Account</a></p>
+
+              <?php else: ?>
+                <p><a class="button" href="signup.php">Sign up</a> &nbsp; <a class="button" href="login.php">Log in</a></p>
+
+              <?php endif; ?>
 
             </div>
 

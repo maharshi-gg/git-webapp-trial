@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<link rel="stylesheet" href="CSS/main.css" type="text/css">
+<!--<link rel="stylesheet" href="styling.css" type="text/css">-->
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -7,7 +7,7 @@
 
     <title>Colored Lists | <!-- Do Something Smart Here --></title>
 
-    <link rel="stylesheet" href="styling.css" type="text/css" />
+    <!--<link rel="stylesheet" href="styling.css" type="text/css" />-->
     <link rel="icon" href="HTML Icons\favicon-checklist.ico" type="image/x-icon">
 
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>

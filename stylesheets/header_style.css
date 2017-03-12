@@ -1,0 +1,30 @@
+/*
+#header { height: 68px; position: relative; border: 1px solid black;}
+#header h1 { position: absolute; top: 0; left: 0; z-index: 2; text-indent: -9999px; overflow: hidden; background-color: grey}
+#header h1 a { display: block; text-indent: -9999px; width: 200px; height: 38px; border: none; border: 1px solid black; }
+#control { width: 500px; float: right; padding: 10px 237px 0 0; text-align: right; border: 1px solid black;}
+*/
+
+#header{
+  height: 80px;
+  background-color: pink;
+  border: 2px solid red;
+  margin: 5px;
+}
+
+#header h1{
+  z-index: 2;
+  color: aquamarine;
+  border: 5px dotted green;
+}
+
+#header a{
+  z-index: 2;
+  color: green;
+  text-decoration: underline;
+}
+
+#control{
+  width: 500px;
+  border: 2px solid blue;
+}

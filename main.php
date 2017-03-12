@@ -5,6 +5,9 @@
    <noscript>This site just doesn't work, period, without JavaScript</noscript>
 
    <!-- IF LOGGED IN -->
+   <?php
+        if(isset($_SESSION['LoggedIn']) && $_SESSION['LoggedIn']==1):
+    ?>
 
         <ul id="list">
               <li class="colorRed">
@@ -44,7 +47,7 @@
            <small>(Nobody but YOU will be able to edit this list)</small></p>
         </div>
    <!-- IF LOGGED OUT -->
-
+ <?php else: ?>
          <ul id="list">
             <li class="colorRed">
                  <span>Walk the dog</span>
@@ -60,7 +63,7 @@
          </ul>
 
          <img src="/images/newlist.jpg" alt="Your new list here!" />
-
+  <?php endif; ?>
 </div>
 
 <?php include_once "sidebar.php"; ?>
