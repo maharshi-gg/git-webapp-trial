@@ -27,17 +27,17 @@
     endif; //end the previous if condition
 
     if(!empty($_SESSION['LoggedIn']) && !empty($_SESSION['Username'])):
-      echo "HEYA";
+      echo "Session not empty";
 ?>
         <p>You are currently <strong>logged in.</strong></p>
         <p><a href="logout.php">Log out</a></p>
 <?php
     elseif(!empty($_POST['username']) && !empty($_POST['password'])):
       include_once 'inc/class.users.inc.php';
+      echo "passed the values";
       $users = new ColoredListsUsers($db);
       if($users->accountLogin()===TRUE):
-        echo "<meta http-equiv='refresh' content='0;/'>";
-        echo "HELLO";
+        echo "<meta http-equiv='refresh' content='0;main.php'>";
       else:
 ?>
  
@@ -55,11 +55,6 @@
         </form>
         <p><a href="password.php">Did you forget your password?</a></p>
 <?php
-        endif;
-    else:
-?>
- 
-<?php
-    endif;
-  endif;
+endif;
+endif;
 ?>

@@ -6,7 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <title>Colored Lists</title>
-    <link rel="stylesheet" href="stylesheets/header_style.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets\header_style.css" type="text/css">
     <link rel="icon" href="HTML Icons\favicon-checklist.ico" type="image/x-icon">
 
     <script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
